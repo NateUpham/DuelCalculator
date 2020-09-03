@@ -67,5 +67,7 @@ function resetScore(){
 	p2NewScore = p2Reset;
 	p1LP.textContent = p1Reset;
 	p2LP.textContent = p2Reset;
+	p1Score = p1NewScore;
+	p2Score = p2NewScore;
 	
 }
