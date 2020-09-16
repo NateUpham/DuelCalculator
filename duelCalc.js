@@ -57,6 +57,12 @@ p2Sub.addEventListener("click", function(){
 
 });
 reset1.addEventListener("click", function(){
+	var image1 = document.querySelector("#p1Pic");
+ 	image1.classList.add("Hidden");
+	var image2 = document.querySelector("#p2Pic");
+ 	image2.classList.add("Hidden");
+	document.querySelector("#p1Choose").classList.remove("Hidden");
+	document.querySelector("#p2Choose").classList.remove("Hidden");
 	document.querySelector("#p1Name").textContent = "Player 1"
 	document.querySelector("#p2Name").textContent = "Player 2"
 	gameOver = false;
@@ -71,3 +77,34 @@ function resetScore(){
 	p2Score = p2Reset;
 	
 }
+function duelist1(){
+ 	var e = document.getElementById("p1Duelist");
+	var image = document.querySelector("#p1Pic")
+ 	image.classList.remove("Hidden");
+ 	document.querySelector("#p1Choose").classList.add("Hidden");
+ 	if(e.selectedIndex > 0){
+ 		if("yugi" === e.options[e.selectedIndex].value){image.src = "images/yugi.jpg"}
+		if("kaiba" === e.options[e.selectedIndex].value){image.src = "images/kaiba.jpg"}
+  		if("joey" === e.options[e.selectedIndex].value){image.src = "images/joey.jpg"}
+  		if("pegasus" === e.options[e.selectedIndex].value){image.src = "images/pegasus.jpg"}
+  		if("bakura" === e.options[e.selectedIndex].value){image.src = "images/bakura.jpg"}
+  		if("mai" === e.options[e.selectedIndex].value){image.src = "images/mai.jpg"}
+ 	}
+}
+document.getElementById("p1Duelist").addEventListener("click", duelist1);
+
+function duelist2(){
+ 	var e = document.getElementById("p2Duelist");
+	var image = document.querySelector("#p2Pic")
+ 	image.classList.remove("Hidden");
+ 	document.querySelector("#p2Choose").classList.add("Hidden");
+ 	if(e.selectedIndex > 0){
+  		if("yugi" === e.options[e.selectedIndex].value){image.src = "images/yugi.jpg"}
+  		if("kaiba" === e.options[e.selectedIndex].value){image.src = "images/kaiba.jpg"}
+  		if("joey" === e.options[e.selectedIndex].value){image.src = "images/joey.jpg"}
+  		if("pegasus" === e.options[e.selectedIndex].value){image.src = "images/pegasus.jpg"}
+  		if("bakura" === e.options[e.selectedIndex].value){image.src = "images/bakura.jpg"}
+  		if("mai" === e.options[e.selectedIndex].value){image.src = "images/mai.jpg"}
+ 	}
+}
+document.getElementById("p2Duelist").addEventListener("click", duelist2);
