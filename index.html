@@ -11,21 +11,55 @@
 		<p>Enter each player's starting life points in the box and then press "Start"</p>
 	</div>
 	<div>
-	<p id= "p1Name">Player 1</p>
-	<h2 id= "p1LP">0</h2>
-	<input type="number" id ="player1">
-	<button id= "p1St">Start</button>
-	<button id= "plAdd">Add</button>
-	<button id= "p1Sub">Subtract</button>
+		<select name="duelist1" id="p1Duelist">
+    			<option value="">--Choose Your Duelist--</option>
+   			<option value="yugi">Yugi</option>
+    			<option value="kaiba">Kaiba</option>
+    			<option value="joey">Joey</option>
+    			<option value="pegasus">Pegasus</option>
+    			<option value="bakura">Bakura</option>
+    			<option value="mai">Mai</option>
+		</select>
+	<br>
+		
+		<div id="p1Image">
+			<p id= "p1Choose" class = "p1Choose">Choose Your Duelist</p>
+			<img id= "p1Pic" class = "Hidden" src = "#" alt = "Select Your Duelist">
+		</div>
+		<div class = "p1Box">
+			<p id= "p1Name">Player 1</p>
+			<h2 id= "p1LP">0</h2>
+			<input type="number" id ="player1">
+			<button id= "p1St">Start</button>
+			<button id= "plAdd">Add</button>
+			<button id= "p1Sub">Subtract</button>
+		</div>
 
 	<hr>
+	<br>
+		<select name="duelist2" id="p2Duelist">
+    			<option value="">--Choose Your Duelist--</option>
+   			<option value="yugi">Yugi</option>
+    			<option value="kaiba">Kaiba</option>
+    			<option value="joey">Joey</option>
+    			<option value="pegasus">Pegasus</option>
+    			<option value="bakura">Bakura</option>
+    			<option value="mai">Mai</option>
+		</select>
+	<br>
 
-	<p id= "p2Name">Player 2</p>
-	<h2 id= "p2LP">0</h2>
-	<input type="number" id ="player2">
-	<button id= "p2St">Start</button>
-	<button id= "p2Add">Add</button>
-	<button id= "p2Sub">Subtract</button>
+		<div id="p2Image">
+			<p id= "p2Choose" class = "p1Choose">Choose Your Duelist</p>
+			<img id= "p2Pic" class = "Hidden" src = "#" alt = "Select Your Duelist">
+		</div>
+		<div class = "p2Box">
+			<p id= "p2Name">Player 2</p>
+			<h2 id= "p2LP">0</h2>
+			<input type="number" id ="player2">
+			<button id= "p2St">Start</button>
+			<button id= "p2Add">Add</button>
+			<button id= "p2Sub">Subtract</button>
+		</div>
 	
 	</div>
 	<br>
@@ -33,7 +67,7 @@
 	<button id="reset1">Reset</button>
 	</div>
 	</div>
-	<script src = "duelCalc.js"></script>
+	<script src = "calc.js"></script>
   </body>
 
 </html>
