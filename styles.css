@@ -3,3 +3,41 @@
   margin: auto;
   text-align: center;
 }
+
+.p1Box {
+	margin: 0 auto;
+	width: 30rem;
+	height: 15rem;
+}
+
+.p2Box {
+	margin: 0 auto;
+	width: 30rem;
+	height: 15rem;
+}
+#p1Image {
+	float: left;
+	height: 15rem;
+	width: 15rem;
+}
+
+#p1Pic {
+	height: 12rem;
+	width: 12rem;
+}
+
+#p2Image {
+	float: left;
+	height: 15rem;
+	width: 15rem;
+}
+
+#p2Pic {
+	height: 12rem;
+	width: 12rem;
+}
+
+.Hidden {
+	diplay: none;
+	visibility: hidden;
+}
