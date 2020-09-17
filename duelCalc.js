@@ -77,6 +77,7 @@ function resetScore(){
 	p2Score = p2Reset;
 	
 }
+document.getElementById("p1Duelist").addEventListener("click", duelist1);
 function duelist1(){
  	var e = document.getElementById("p1Duelist");
 	var image = document.querySelector("#p1Pic")
@@ -91,8 +92,9 @@ function duelist1(){
   		if("mai" === e.options[e.selectedIndex].value){image.src = "images/mai.jpg"}
  	}
 }
-document.getElementById("p1Duelist").addEventListener("onchange", duelist1);
 
+
+document.getElementById("p2Duelist").addEventListener("click", duelist2);
 function duelist2(){
  	var e = document.getElementById("p2Duelist");
 	var image = document.querySelector("#p2Pic")
@@ -107,4 +109,4 @@ function duelist2(){
   		if("mai" === e.options[e.selectedIndex].value){image.src = "images/mai.jpg"}
  	}
 }
-document.getElementById("p2Duelist").addEventListener("onchange", duelist2);
+
