@@ -91,7 +91,7 @@ function duelist1(){
   		if("mai" === e.options[e.selectedIndex].value){image.src = "images/mai.jpg"}
  	}
 }
-document.getElementById("p1Duelist").addEventListener("click", duelist1);
+document.getElementById("p1Duelist").addEventListener("onchange", duelist1);
 
 function duelist2(){
  	var e = document.getElementById("p2Duelist");
@@ -107,4 +107,4 @@ function duelist2(){
   		if("mai" === e.options[e.selectedIndex].value){image.src = "images/mai.jpg"}
  	}
 }
-document.getElementById("p2Duelist").addEventListener("click", duelist2);
+document.getElementById("p2Duelist").addEventListener("onchange", duelist2);
