@@ -7,11 +7,17 @@
   <body>
 	<div class = "container">
 	<div>
-		<h1>It's Time to Duel!</h1>
-		<h2>Life Points</h2>
+	<h1>Life Points</h1>
 		<p>Enter each player's starting life points in the box and then press "Start"</p>
 	</div>
-	<div>
+
+	<div id= "coinBox">
+		<button id= "flipCoin">Flip Coin</button>
+		<img id= "coin" class= "Hidden" src = "#" alt = "Coin">
+		<p id= "coinResult" class= "Hidden"></p>
+		
+	</div>
+	<div class= "players">
 		<select name="duelist1" id="p1Duelist">
     			<option value="">--Choose Your Duelist--</option>
    			<option value="yugi">Yugi</option>
@@ -38,6 +44,7 @@
 		</div>
 
 	<br>
+	
 	<br>
 		<select name="duelist2" id="p2Duelist">
     			<option value="">--Choose Your Duelist--</option>
