@@ -12,7 +12,7 @@ var p1Reset = 0;
 var p2Reset = 0;
 
 
-/* Player 1 Buttons */
+// Player 1 Buttons
 
 p1St.addEventListener("click", function(){
 	p1Score = Number(document.getElementById("player1").value);
@@ -49,7 +49,7 @@ p1Sub.addEventListener("click", function(){
 
 
 
-/* Player 2 Buttons */
+// Player 2 Buttons
 
 p2St.addEventListener("click", function(){
 	p2Score = Number(document.getElementById("player2").value);
@@ -85,7 +85,7 @@ p2Sub.addEventListener("click", function(){
 
 });
 
-/* Reset Button */
+// Reset Button
 
 reset1.addEventListener("click", function(){
 	var image1 = document.querySelector("#p1Pic");
@@ -110,7 +110,7 @@ function resetScore(){
 }
 
 
-/* Character Selection */
+// Character Selection
 
 function duelist1(){
  	var e = document.getElementById("p1Duelist");
@@ -149,7 +149,7 @@ document.getElementById("p2Duelist").addEventListener("click", p2IntroDialogue);
 
 
 
-/* Dialogue */
+// Dialogue
 
 var yugiIntro = "Lets begin!"
 var yugiGood = "The Heart of the Cards is on my side!"
@@ -264,3 +264,27 @@ function p2WinDialogue (){
 		d.classList.add("Hidden");
 }, 4000);
 }
+
+//Coin Flip
+
+function coinFlip(){
+	var coin = Math.round((Math.random()) * 3);
+	console.log(coin);
+	if(coin > 1){
+		document.querySelector("#coin").src = "images/heads.png";
+		document.querySelector("#coinResult").innerHTML = "Heads"
+	}
+	else {
+		document.querySelector("#coin").src = "images/tails.png";
+		document.querySelector("#coinResult").innerHTML = "Tails"
+	}	
+		document.querySelector("#coin").classList.remove("Hidden");
+		document.querySelector("#coinResult").classList.remove("Hidden");
+
+	setTimeout(function(){
+		document.querySelector("#coin").classList.add("Hidden");
+		document.querySelector("#coinResult").classList.add("Hidden");
+		}, 4000);
+}
+
+document.getElementById("flipCoin").addEventListener("click", coinFlip);
