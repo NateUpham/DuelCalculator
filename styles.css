@@ -1,7 +1,6 @@
 html {
   position: relative;
   z-index: 1;
-  height: 100%;	
 }
 
 html::before {
@@ -22,11 +21,12 @@ html::before {
 
 .container {
   width: 70%;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
-  height: 90%
 }
-
+.players {
+	
+}
 
 p {
 	font-weight: bold
@@ -74,5 +74,24 @@ h2 {
 .Hidden {
 	diplay: none;
 	visibility: hidden;
+}
+
+#coinBox {
+	margin-top: 8rem;
+	float: right;
+	height: 10rem;
+	width: 10rem;
+	position: absolute;
+	left: 65rem;
+	
+}
+#coin {
+	height: 100%;
+	width: 100%;
+	
+}
+
+#flipCoin {
+	margin-bottom: 2rem;
 }
 
