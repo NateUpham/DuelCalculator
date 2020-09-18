@@ -269,7 +269,6 @@ function p2WinDialogue (){
 
 function coinFlip(){
 	var coin = Math.round((Math.random()) * 3);
-	console.log(coin);
 	if(coin > 1){
 		document.querySelector("#coin").src = "images/heads.png";
 		document.querySelector("#coinResult").innerHTML = "Heads"
